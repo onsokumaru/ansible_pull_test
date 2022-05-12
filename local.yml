@@ -3,6 +3,10 @@
   become: true
 
   tasks:
-  - name: Install ranger
+  - name: Install packages
     apt:
-      name: ranger
+      name: 
+        - ranger
+        - vim-nox
+        - build-essential
+        - curl
