@@ -3,6 +3,6 @@
   become: true
 
   tasks:
-  - name: Install htop
+  - name: Install ranger
     apt:
-      name: htop
+      name: ranger
