@@ -58,7 +58,7 @@
   #notify: Start docker on boot
   tags:
     - docker
-- name: Add remote "ubuntu" user to "docker" group
+- name: Add remote "vagrant" user to "docker" group
   remote_user: vagrant
   user:
     name: "vagrant"
