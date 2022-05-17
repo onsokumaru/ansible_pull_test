@@ -1,10 +1,19 @@
 ---
 - name: Create basic directories and set permissions
   file:
-    path: ~/Desktop
+    path: /home/ubuntu/{{ item }}
     state: directory
     mode: "u=rwx,g=rx,o=rx"
-    
+
+    with_items:
+      - 'Desktop'
+      - 'Documents'
+      - 'Downloads'
+      - 'Music'
+      - 'Pictures'
+      - 'Public'
+      - 'Templates'
+      - 'Videos'
     #    path: ~/Documents
     #    state: directory
     #    mode: "u=rwx,g=rx,o=rx"
