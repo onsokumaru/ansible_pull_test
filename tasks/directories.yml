@@ -33,8 +33,8 @@
     state: directory
     mode: "u=rwx,g=rx,o=rx"
 
-- name: Create custom directories and set permissions
-  file:
-    path: ~/code/ansible
-    state: directory
-    mode: "u=rwx,g=rwx,o=rx"
+    #- name: Create custom directories and set permissions
+    #  file:
+    #    path: ~/code/ansible
+    #    state: directory
+    #    mode: "u=rwx,g=rwx,o=rx"
