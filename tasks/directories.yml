@@ -5,33 +5,33 @@
     state: directory
     mode: "u=rwx,g=rx,o=rx"
     
-    path: ~/Documents
-    state: directory
-    mode: "u=rwx,g=rx,o=rx"
-
-    path: ~/Downloads
-    state: directory
-    mode: "u=rwx,g=rx,o=rx"
-
-    path: ~/Music
-    state: directory
-    mode: "u=rwx,g=rx,o=rx"
-
-    path: ~/Pictures
-    state: directory
-    mode: "u=rwx,g=rx,o=rx"
-
-    path: ~/Public
-    state: directory
-    mode: "u=rwx,g=rx,o=rx"
-
-    path: ~/Templates
-    state: directory
-    mode: "u=rwx,g=rx,o=rx"
-    
-    path: ~/Videos
-    state: directory
-    mode: "u=rwx,g=rx,o=rx"
+    #    path: ~/Documents
+    #    state: directory
+    #    mode: "u=rwx,g=rx,o=rx"
+    #
+    #    path: ~/Downloads
+    #    state: directory
+    #    mode: "u=rwx,g=rx,o=rx"
+    #
+    #    path: ~/Music
+    #    state: directory
+    #    mode: "u=rwx,g=rx,o=rx"
+    #
+    #    path: ~/Pictures
+    #    state: directory
+    #    mode: "u=rwx,g=rx,o=rx"
+    #
+    #    path: ~/Public
+    #    state: directory
+    #    mode: "u=rwx,g=rx,o=rx"
+    #
+    #    path: ~/Templates
+    #    state: directory
+    #    mode: "u=rwx,g=rx,o=rx"
+    #    
+    #    path: ~/Videos
+    #    state: directory
+    #    mode: "u=rwx,g=rx,o=rx"
 
     #- name: Create custom directories and set permissions
     #  file:
