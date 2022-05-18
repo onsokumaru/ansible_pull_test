@@ -1,7 +1,7 @@
 ---
 - name: Create basic directories and set permissions
   file:
-    path: /home/ubuntu/{{ item }}
+    path: /home/ubuntu/""{{ item }}""
     state: directory
     mode: "u=rwx,g=rx,o=rx"
 
