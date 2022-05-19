@@ -3,6 +3,7 @@
     path: "/home/ubuntu/{{ item }}"
     state: directory
   loop:
+    # basic directories
     - Desktop
     - Documents
     - Downloads
@@ -11,3 +12,24 @@
     - Public
     - Templates
     - Videos
+    # custom directories
+    - .ssh/AWS
+    - .ssh/BitBucket
+    - .ssh/GitHub
+    - .ssh/GitLab
+    - .ssh/Linode
+    - archive
+    - backups
+    - vcs/git
+    - vcs/svn
+    - code/ansible
+    - code/bash/projects
+    - code/c_lang/projects
+    - code/c_lang/libs
+    - code/c_lang/testing
+    - code/docker/projects
+    - code/python3/projects
+    - code/python3/modules
+    - code/ruby/projects
+    - code/ruby/gems
+    - code/vagrant
