@@ -1,4 +1,4 @@
-- name: create basic directory
+#- name: create basic directory
   ansible.builtin.file:
     path: "$HOME/{{ item.dest }}"
     mode: "{{ item.mode }}"
