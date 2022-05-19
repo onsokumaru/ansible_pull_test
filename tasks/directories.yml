@@ -1,48 +1,7 @@
-- name: create basic directory
+- name: create basic directories
   file:
-    path: "$HOME/{{ item.dest }}"
-    mode: "{{ item.mode }}"
+    path: "$HOME/{{ item }}"
     state: directory
-
-    loop:
-      - { dest: 'Desktop', mode: '0755'}
-      - { dest: 'Documents', mode: '0755'}
-      - { dest: 'Downloads', mode: '0755'}
-      - { dest: 'Music', mode: '0755'}
-      - { dest: 'Pictures', mode: '0755'}
-      - { dest: 'Public', mode: '0755'}
-      - { dest: 'Templates', mode: '0755'}
-      - { dest: 'Videos', mode: '0755'}
-    #    path: ~/Documents
-    #    state: directory
-    #    mode: "u=rwx,g=rx,o=rx"
-    #
-    #    path: ~/Downloads
-    #    state: directory
-    #    mode: "u=rwx,g=rx,o=rx"
-    #
-    #    path: ~/Music
-    #    state: directory
-    #    mode: "u=rwx,g=rx,o=rx"
-    #
-    #    path: ~/Pictures
-    #    state: directory
-    #    mode: "u=rwx,g=rx,o=rx"
-    #
-    #    path: ~/Public
-    #    state: directory
-    #    mode: "u=rwx,g=rx,o=rx"
-    #
-    #    path: ~/Templates
-    #    state: directory
-    #    mode: "u=rwx,g=rx,o=rx"
-    #    
-    #    path: ~/Videos
-    #    state: directory
-    #    mode: "u=rwx,g=rx,o=rx"
-
-    #- name: Create custom directories and set permissions
-    #  file:
-    #    path: ~/code/ansible
-    #    state: directory
-    #    mode: "u=rwx,g=rwx,o=rx"
+  loop:
+    - Desktop
+    - Documents
