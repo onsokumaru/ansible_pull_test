@@ -1,6 +1,6 @@
-- name: Create basic directories
+- name: create basic directory
   ansible.builtin.file:
-    path: "/home/ubuntu/{{ item.dest }}"
+    path: "$HOME/{{ item.dest }}"
     mode: "{{ item.mode }}"
     state: directory
 
