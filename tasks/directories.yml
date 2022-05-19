@@ -1,11 +1,10 @@
----
-- name: Create basic directories and set permissions
-  file:
-    path: /home/ubuntu/"{{ item.dest }}"
+- name: Create basic directories
+  ansible.builtin.file:
+    path: "/home/ubuntu/{{ item.dest }}"
     mode: "{{ item.mode }}"
     state: directory
 
-    with_items:
+    loop:
       - { dest: 'Desktop', mode: '0755'}
       - { dest: 'Documents', mode: '0755'}
       - { dest: 'Downloads', mode: '0755'}
