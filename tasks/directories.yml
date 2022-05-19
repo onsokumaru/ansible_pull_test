@@ -1,5 +1,5 @@
-#- name: create basic directory
-  ansible.builtin.file:
+- name: create basic directory
+  file:
     path: "$HOME/{{ item.dest }}"
     mode: "{{ item.mode }}"
     state: directory
