@@ -1,6 +1,6 @@
 - name: create basic directories
   file:
-    path: "$HOME/{{ item }}"
+    path: "/home/ubuntu/{{ item }}"
     state: directory
   loop:
     - Desktop

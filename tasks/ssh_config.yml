@@ -4,9 +4,3 @@
 # before I shift it to creating ssh keys
 # and directories
 
-- name: register loop output as a variable
-  ansible.builtin.shell: "echo {{ item }}"
-  loop:
-    - "one"
-    - "two"
-  register: echo
