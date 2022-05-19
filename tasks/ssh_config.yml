@@ -1,0 +1,12 @@
+---
+# this is to test looping and why 
+# I can't create multiple directories
+# before I shift it to creating ssh keys
+# and directories
+
+- name: register loop output as a variable
+  ansible.builtin.shell: "echo {{ item }}"
+  loop:
+    - "one"
+    - "two"
+  register: echo
